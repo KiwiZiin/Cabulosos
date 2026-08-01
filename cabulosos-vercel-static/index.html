@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1b0910" />
+    <meta
+      name="description"
+      content="Cabuloso’s: hambúrguer artesanal feito na brasa. Escolha seu fogo e peça direto pelo WhatsApp."
+    />
+    <title>Cabuloso’s — Fome sem freio</title>
+    <link rel="icon" href="./assets/brand/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./assets/fonts/bowlby-one-sc-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/fonts/space-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="site-shell" id="top">
+      <div class="scroll-progress" aria-hidden="true"></div>
+      <div class="toast" role="status" aria-live="polite">
+        <span aria-hidden="true">✓</span>
+        <span class="toast-message"></span>
+      </div>
+
+      <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="Cabuloso’s — início">
+          <img src="./assets/brand/cabulosos-logo-cream.png" alt="Cabuloso’s Hamburgueria Artesanal" />
+        </a>
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="#manifesto">A casa</a>
+          <a href="#cardapio">Cardápio</a>
+          <a href="#monte">Monte o seu</a>
+        </nav>
+        <button class="nav-order js-whatsapp" type="button" data-message="Olá! Quero fazer um pedido na Cabuloso’s.">
+          Pedir agora <span class="arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="mobile-toggle" type="button" aria-expanded="false" aria-label="Abrir menu">
+          <span class="menu-bars" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <div class="mobile-menu" aria-hidden="true">
+        <a href="#manifesto">A casa</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#monte">Monte o seu</a>
+        <button class="js-whatsapp" type="button" data-message="Olá! Quero fazer um pedido na Cabuloso’s.">
+          Pedir no WhatsApp <span class="arrow" aria-hidden="true">↗</span>
+        </button>
+      </div>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow hero-animate"><span></span> Hamburgueria artesanal · feita na brasa</p>
+            <h1 id="hero-title" class="hero-title" aria-label="Fome sem freio">
+              <span class="hero-animate">Fome</span>
+              <span class="hero-animate outline">sem</span>
+              <span class="hero-animate">freio.</span>
+            </h1>
+            <p class="hero-description hero-animate">
+              Blend de verdade, fogo alto e combinações que não passam despercebidas.
+              Um cardápio curto, afiado e feito para chegar quente.
+            </p>
+            <div class="hero-actions hero-animate">
+              <a class="button button-primary" href="#cardapio">
+                Ver cardápio <span class="arrow" aria-hidden="true">↓</span>
+              </a>
+              <button class="button button-ghost js-whatsapp" type="button" data-message="Olá! Quero conhecer o cardápio da Cabuloso’s.">
+                Chamar no WhatsApp <span class="arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <dl class="hero-facts hero-animate">
+              <div><dt>160 g</dt><dd>Blend da casa</dd></div>
+              <div><dt>100%</dt><dd>Feito na chapa</dd></div>
+              <div><dt>Quente</dt><dd>Do fogo à entrega</dd></div>
+            </dl>
+          </div>
+
+          <div class="hero-media">
+            <img src="./assets/images/hero-burger-v2.webp" alt="Hambúrguer artesanal Cabuloso’s com queijo derretido" fetchpriority="high" data-parallax />
+            <div class="hero-media-shade"></div>
+            <div class="hero-stamp" aria-hidden="true">
+              <img class="brand-flame-icon" src="./assets/brand/cabulosos-flame-v2.svg" alt="" />
+              <span>Feito no fogo</span>
+            </div>
+            <div class="hero-index" aria-hidden="true">01 / 04</div>
+          </div>
+        </section>
+
+        <div class="ticker" aria-hidden="true">
+          <div>
+            <span>CARNE · FOGO · PÃO · MOLHO ·</span>
+            <span>CARNE · FOGO · PÃO · MOLHO ·</span>
+            <span>CARNE · FOGO · PÃO · MOLHO ·</span>
+          </div>
+        </div>
+
+        <section class="campaign" aria-labelledby="campaign-title">
+          <div class="section-container campaign-heading">
+            <p class="eyebrow campaign-animate"><span></span> Campanha Cabuloso’s</p>
+            <div class="campaign-title-wrap campaign-animate">
+              <h2 id="campaign-title">A brasa<br />chega inteira.</h2>
+              <p>
+                Embalagem, sabor e atitude no mesmo pedido. Do balcão à sua porta,
+                com a identidade Cabuloso’s em cada detalhe.
+              </p>
+            </div>
+          </div>
+          <div class="campaign-frame">
+            <img src="./assets/brand/banner-promocional-v2.png" alt="Banner promocional Cabuloso’s com hambúrguer, fritas, bebida e embalagem artesanal" width="1983" height="913" loading="lazy" />
+          </div>
+          <div class="section-container campaign-footer campaign-animate">
+            <span>Disponível no iFood e 99 Food</span>
+            <button class="button button-primary js-whatsapp" type="button" data-message="Olá! Vi a campanha da Cabuloso’s e quero fazer um pedido.">
+              Quero agora <span class="arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="manifesto section" id="manifesto">
+          <div class="manifesto-word" aria-hidden="true">BRASA</div>
+          <img class="manifesto-logo brand-logo-float" src="./assets/brand/cabulosos-logo-cream.png" alt="" aria-hidden="true" />
+          <div class="section-container manifesto-grid">
+            <div class="reveal manifesto-heading">
+              <p class="eyebrow light"><span></span> Nosso manifesto</p>
+              <h2>Não é fast-food.<br />É fogo com método.</h2>
+            </div>
+            <div class="reveal manifesto-copy">
+              <p>
+                A Cabuloso’s nasceu para transformar o hambúrguer artesanal em experiência:
+                sabor direto, textura de verdade e personalidade em cada detalhe.
+              </p>
+              <p>Poucos ingredientes, muita intenção. Nada entra no pão por acaso.</p>
+              <a href="#cardapio">Conheça os protagonistas <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+            <div class="manifesto-metrics reveal">
+              <div><strong>01</strong><span>Blend preparado diariamente</span></div>
+              <div><strong>02</strong><span>Molhos feitos na casa</span></div>
+              <div><strong>03</strong><span>Pão selado na manteiga</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu-section section" id="cardapio">
+          <div class="section-container">
+            <div class="section-heading reveal">
+              <div>
+                <p class="eyebrow"><span></span> Cardápio da casa</p>
+                <h2>Escolha<br />seu fogo.</h2>
+              </div>
+              <p>Quatro receitas autorais. O mesmo compromisso com crosta, suculência e equilíbrio.</p>
+            </div>
+
+            <div class="menu-grid">
+              <article class="menu-card">
+                <div class="menu-photo">
+                  <img src="./assets/images/menu-smash-v2.webp" alt="Brasa Original" loading="lazy" data-parallax />
+                  <span>Mais pedido</span><strong class="menu-mobile-price">R$ 31,90</strong><small>01</small>
+                </div>
+                <div class="menu-copy">
+                  <p>O clássico da casa</p><h3>Brasa Original</h3><div class="menu-line"></div>
+                  <p class="menu-description">Blend de 160 g, cheddar cremoso, picles da casa, cebola roxa e molho Cabuloso no brioche tostado.</p>
+                  <div class="menu-footer"><strong>R$ 31,90</strong><button class="choose-burger" type="button" data-index="0">Quero esse <span class="arrow" aria-hidden="true">↗</span></button></div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="menu-photo">
+                  <img src="./assets/images/menu-bacon-v2.webp" alt="Vulcão Bacon" loading="lazy" data-parallax />
+                  <span>Assinatura</span><strong class="menu-mobile-price">R$ 39,90</strong><small>02</small>
+                </div>
+                <div class="menu-copy">
+                  <p>Defumado e intenso</p><h3>Vulcão Bacon</h3><div class="menu-line"></div>
+                  <p class="menu-description">Blend alto, queijo meia cura, bacon crocante, cebola caramelizada e barbecue de rapadura.</p>
+                  <div class="menu-footer"><strong>R$ 39,90</strong><button class="choose-burger" type="button" data-index="1">Quero esse <span class="arrow" aria-hidden="true">↗</span></button></div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="menu-photo">
+                  <img src="./assets/images/menu-double-v2.webp" alt="Duplo Sem Freio" loading="lazy" data-parallax />
+                  <span>Brutal</span><strong class="menu-mobile-price">R$ 42,90</strong><small>03</small>
+                </div>
+                <div class="menu-copy">
+                  <p>Para fome grande</p><h3>Duplo Sem Freio</h3><div class="menu-line"></div>
+                  <p class="menu-description">Dois smash de 100 g, queijo em dobro, bacon laqueado, picles e maionese de alho assado.</p>
+                  <div class="menu-footer"><strong>R$ 42,90</strong><button class="choose-burger" type="button" data-index="2">Quero esse <span class="arrow" aria-hidden="true">↗</span></button></div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="menu-photo">
+                  <img src="./assets/images/menu-green-v2.webp" alt="Fogo Verde" loading="lazy" data-parallax />
+                  <span>Picante</span><strong class="menu-mobile-price">R$ 34,90</strong><small>04</small>
+                </div>
+                <div class="menu-copy">
+                  <p>Fresco e picante</p><h3>Fogo Verde</h3><div class="menu-line"></div>
+                  <p class="menu-description">Smash, queijo prato, alface crocante, tomate, picles, jalapeño e maionese verde de ervas.</p>
+                  <div class="menu-footer"><strong>R$ 34,90</strong><button class="choose-burger" type="button" data-index="3">Quero esse <span class="arrow" aria-hidden="true">↗</span></button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="side-menu reveal">
+              <div class="side-menu-title"><span aria-hidden="true">✦</span><span>Para acompanhar</span></div>
+              <div class="side-list">
+                <div class="side-item"><span>01</span><div><strong>Fritas na Brasa</strong><small>Páprica defumada + sal de alho</small></div><b>R$ 14,90</b></div>
+                <div class="side-item"><span>02</span><div><strong>Onion Rings</strong><small>Crocantes + molho Cabuloso</small></div><b>R$ 16,90</b></div>
+                <div class="side-item"><span>03</span><div><strong>Fritas com Cheddar</strong><small>Cheddar cremoso + bacon</small></div><b>R$ 21,90</b></div>
+                <div class="side-item"><span>04</span><div><strong>Bebida Gelada</strong><small>Lata 350 ml</small></div><b>R$ 7,90</b></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="builder section" id="monte">
+          <div class="section-container builder-shell reveal">
+            <div class="builder-intro">
+              <p class="eyebrow light"><span></span> Laboratório da brasa</p>
+              <h2>Monte o seu<br />sem perder<br />a essência.</h2>
+              <p>Escolha a receita, controle a intensidade e finalize com os extras. O resumo vai pronto para o WhatsApp.</p>
+              <div class="builder-badge"><img class="brand-flame-icon" src="./assets/brand/cabulosos-flame-v2.svg" alt="" /> Pedido sob medida</div>
+              <img class="builder-logo brand-logo-float" src="./assets/brand/cabulosos-logo-cream.png" alt="" aria-hidden="true" />
+            </div>
+
+            <div class="builder-panel">
+              <div class="builder-step">
+                <div class="builder-label"><span>01</span><strong>Escolha a base</strong></div>
+                <div class="base-options">
+                  <button class="base-option is-active" type="button" data-index="0"><span>Brasa Original</span><small>R$ 31,90</small></button>
+                  <button class="base-option" type="button" data-index="1"><span>Vulcão Bacon</span><small>R$ 39,90</small></button>
+                  <button class="base-option" type="button" data-index="2"><span>Duplo Sem Freio</span><small>R$ 42,90</small></button>
+                  <button class="base-option" type="button" data-index="3"><span>Fogo Verde</span><small>R$ 34,90</small></button>
+                </div>
+              </div>
+
+              <div class="builder-step">
+                <div class="builder-label"><span>02</span><strong>Intensidade</strong></div>
+                <div class="heat-options">
+                  <button class="heat-option" type="button" data-index="0">
+                    <span class="flame-row"><img src="./assets/brand/cabulosos-flame-v2.svg" alt="" /></span><strong>Brasa</strong><small>Suave</small>
+                  </button>
+                  <button class="heat-option is-active" type="button" data-index="1">
+                    <span class="flame-row"><img src="./assets/brand/cabulosos-flame-v2.svg" alt="" /><img src="./assets/brand/cabulosos-flame-v2.svg" alt="" /></span><strong>Fogo alto</strong><small>Marcante</small>
+                  </button>
+                  <button class="heat-option" type="button" data-index="2">
+                    <span class="flame-row"><img src="./assets/brand/cabulosos-flame-v2.svg" alt="" /><img src="./assets/brand/cabulosos-flame-v2.svg" alt="" /><img src="./assets/brand/cabulosos-flame-v2.svg" alt="" /></span><strong>Cabuloso</strong><small>Sem freio</small>
+                  </button>
+                </div>
+              </div>
+
+              <div class="builder-step">
+                <div class="builder-label"><span>03</span><strong>Extras</strong></div>
+                <div class="extra-options">
+                  <button class="extra-option is-active" type="button" data-id="bacon"><span class="check-box">✓</span><span>Bacon crocante</span><small>+ R$ 5,00</small></button>
+                  <button class="extra-option" type="button" data-id="cheddar"><span class="check-box"></span><span>Cheddar extra</span><small>+ R$ 4,00</small></button>
+                  <button class="extra-option" type="button" data-id="crispy"><span class="check-box"></span><span>Cebola crispy</span><small>+ R$ 3,50</small></button>
+                  <button class="extra-option" type="button" data-id="picles"><span class="check-box"></span><span>Picles da casa</span><small>+ R$ 2,50</small></button>
+                </div>
+              </div>
+
+              <div class="builder-checkout">
+                <div class="quantity" aria-label="Quantidade">
+                  <button class="quantity-minus" type="button" aria-label="Diminuir quantidade">−</button>
+                  <strong class="quantity-value">1</strong>
+                  <button class="quantity-plus" type="button" aria-label="Aumentar quantidade">+</button>
+                </div>
+                <div class="builder-total"><span>Total estimado</span><strong class="total-value">R$ 38,90</strong></div>
+                <button class="checkout-button" type="button"><span aria-hidden="true">▣</span> Enviar pedido <span class="arrow" aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="process section">
+          <div class="section-container">
+            <div class="process-heading reveal">
+              <p class="eyebrow"><span></span> Da chapa até você</p>
+              <h2>Simples.<br />Quente.<br />Cabuloso.</h2>
+            </div>
+            <ol class="process-list">
+              <li><span>01</span><div><h3>Você escolhe</h3><p>Monte o pedido no site e envie o resumo pelo WhatsApp.</p></div></li>
+              <li><span>02</span><div><h3>A chapa acende</h3><p>Seu hambúrguer começa a ser preparado somente após a confirmação.</p></div></li>
+              <li><span>03</span><div><h3>A brasa chega</h3><p>Retire ou receba do jeito combinado, com tudo bem embalado.</p></div></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="final-cta">
+          <div class="final-flame flame-one" aria-hidden="true"></div>
+          <div class="final-flame flame-two" aria-hidden="true"></div>
+          <div class="final-content reveal">
+            <img class="final-logo brand-logo-float" src="./assets/brand/cabulosos-logo-cream.png" alt="Cabuloso’s Hamburgueria Artesanal" />
+            <p>Fome não espera.</p><h2>Acende<br />o pedido.</h2>
+            <button class="button button-dark js-whatsapp" type="button" data-message="Olá! Quero fazer um pedido na Cabuloso’s.">
+              Pedir pelo WhatsApp <span class="arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="final-word" aria-hidden="true">CABULOSO’S</div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-wordmark"><img src="./assets/brand/cabulosos-logo-cream.png" alt="Cabuloso’s Hamburgueria Artesanal" /></div>
+        <div class="footer-meta"><span>Hamburgueria artesanal</span><span>Feito no fogo · 2026</span></div>
+        <nav aria-label="Links do rodapé">
+          <a href="#cardapio">Cardápio</a><a href="#monte">Monte o seu</a>
+          <a href="https://wa.me/message/Y3CC2XHDY6N4M1" target="_blank" rel="noreferrer">WhatsApp</a>
+        </nav>
+      </footer>
+    </div>
+
+    <script src="./assets/vendor/gsap.min.js" defer></script>
+    <script src="./assets/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
